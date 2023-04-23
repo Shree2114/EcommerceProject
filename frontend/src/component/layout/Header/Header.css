@@ -1,0 +1,39 @@
+.speedDial {
+  position: fixed;
+  right: 1vmax;
+  top: 1vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.MuiDrawer-paper {
+  background: linear-gradient(to bottom, rgb(192, 50, 50), #fe8c00) !important;
+}
+.spg{
+  background-color: ;
+}
+@media screen and (max-width: 600px) {
+  .speedDial {
+    position: fixed;
+    right: 3vmax;
+    top: 2.5vmax;
+    width: 40px;
+    height: 45px;
+  }
+
+  .speedDialIcon {
+    width: 56px;
+    height: 45px;
+    border-radius: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .MuiToolbar-gutters {
+    padding-right: 10px !important;
+  }
+}

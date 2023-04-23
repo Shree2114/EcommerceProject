@@ -1,0 +1,133 @@
+.sidebar {
+    background: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+  }
+  
+  .mobile-settingMenu2 {
+    display: none;
+  }
+  
+  .sidebar > a > img,
+  .sidebar > .tree > img {
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  .sidebar > a > img:hover,
+  .sidebar > .tree > img:hover {
+    filter: drop-shadow(0 0 10px orange);
+  }
+  
+  .sidebar a,
+  .sidebar .tree {
+    text-decoration: none;
+    color: black;
+    font: 200 1rem "Roboto";
+    padding: 2rem;
+    transition: all 0.5s;
+  }
+  
+  .sidebar a:hover,
+  .sidebar .tree:hover {
+    color: orange;
+    transform: scale(1.1);
+  }
+  
+  .sidebar a > P,
+  .sidebar .tree > P {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar a > p > svg,
+  .sidebar .tree > p > svg {
+    margin-right: 0.5rem;
+  }
+  
+  .MuiTypography-root {
+    background-color: #fff !important;
+  }
+  
+  .MuiTreeItem-iconContainer svg {
+    font-size: 2vmax !important;
+  }
+  
+  .MuiTreeItem-label {
+    background: inherit !important;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .sidebar {
+      background: gray;
+      display: none;
+    }
+  
+    .mobile-sidebar {
+      z-index: 5;
+      text-decoration: none;
+      display: block;
+      padding: 2vmax;
+      width: 45%;
+      position: absolute;
+      top: 5vmax;
+      background: linear-gradient(to right, #f2994a, #f2c94c);
+      margin: 2vmax;
+      border-radius: 5px;
+    }
+  
+    .mobile-settingMenu2 {
+      position: absolute;
+      display: block;
+      top: 2vmax;
+      left: 2vmax;
+    }
+  
+    .mobile-sidebar > a > img,
+    .mobile-sidebar > .tree > img {
+      width: 100%;
+      transition: all 0.5s;
+    }
+  
+    .mobile-sidebar > a > img:hover,
+    .mobile-sidebar > .tree > img:hover {
+      filter: drop-shadow(0 0 10px orange);
+    }
+  
+    .mobile-sidebar a,
+    .mobile-sidebar .tree {
+      text-decoration: none;
+      color: black;
+      font: 200 1rem "Roboto";
+      transition: all 0.5s;
+      padding: 2vmax;
+    }
+  
+    .mobile-sidebar a:hover,
+    .mobile-sidebar .tree:hover {
+      color: white;
+      transform: scale(1.1);
+    }
+  
+    .mobile-sidebar a > P,
+    .mobile-sidebar .tree > P {
+      display: flex;
+      align-items: center;
+      padding: 2vmax;
+    }
+  
+    .mobile-sidebar a > p > svg,
+    .mobile-sidebar .tree > p > svg {
+      margin-right: 0.5rem;
+    }
+  
+    .MuiTreeItem-iconContainer svg {
+      font-size: 4vmax !important;
+    }
+  
+    .MuiTreeItem-label {
+      background: linear-gradient(to right, #f2994a, #f2c94c) !important;
+    }
+  }
+  
